@@ -47,7 +47,7 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <div className="mt-32">
-          <p className="text-2xl/normal mb-2 text-center" id="About">
+          <p className="text-2xl/normal mb-2 text-center font-semibold" id="About">
             About
           </p>
           <p className="text-base/normal">
