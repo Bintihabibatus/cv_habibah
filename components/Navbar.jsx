@@ -21,23 +21,28 @@ const Navbar = () => {
                         <h1 className="text-3xl font-bold">Curriculum Vitae</h1>
                     </div>
 
-                    <ul className={`menu flex items-center gap-12 md:static absolute ${active ? "top-24 : opacity-100" : "top-20 opacity-0"} left-1/2 -translate-x-1/2 pl-4 pr-10 md:pl-0 md:pr-0
+                    {/* Tambahkan "Blog" di sini */}
+                    <ul className={`menu flex items-center gap-12 md:static absolute ${active ? "top-24 opacity-100" : "top-20 opacity-0"} left-1/2 -translate-x-1/2 pl-4 pr-10 md:pl-0 md:pr-0
                     md:translate-0 md:flex-row flex-col md:bg-transparent bg-slate-700 w-full md:w-auto md:py-0 py-10 text-white md:text-black
                     transition-all md:opacity-100 md:transition-none md:text-base text-xl`}>
                         <li>
-                            <Link href="#About">About</Link>
+                            <Link href="#About" onClick={() => setActive(false)}>About</Link>
                         </li>
                         <li>
-                            <Link href="#Education">Education</Link>
+                            <Link href="#Education" onClick={() => setActive(false)}>Education</Link>
                         </li>
                         <li>
-                            <Link href="#Skills">Skills</Link>
+                            <Link href="#Skills" onClick={() => setActive(false)}>Skills</Link>
                         </li>
                         <li>
-                            <Link href="#Project">Project</Link>
+                            <Link href="#Project" onClick={() => setActive(false)}>Project</Link>
                         </li>
-                         <li>
-                            <Link href="#Contact">Contact</Link>
+                        {/* Tambahkan menu Blog di sini */}
+                        <li>
+                            <Link href="#Blog" onClick={() => setActive(false)}>Blog</Link>
+                        </li>
+                        <li>
+                            <Link href="#Contact" onClick={() => setActive(false)}>Contact</Link>
                         </li>
                     </ul>
 
